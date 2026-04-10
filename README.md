@@ -41,9 +41,9 @@ The system demonstrates end-to-end ML engineering: dataset curation, feature eng
 
 ## 📸 Demo
 
-![Demo](assets/demo.png)
-
-> To add your own screenshot, capture a terminal session and save it as `assets/demo.png`.
+<p align="center">
+  <img src="assets/demo.png" alt="EasyWay AI Chatbot Demo" width="700" />
+</p>
 
 ---
 
@@ -51,7 +51,7 @@ The system demonstrates end-to-end ML engineering: dataset curation, feature eng
 
 | Feature | Description |
 |---------|-------------|
-| **Custom Dataset** | 132 hand-crafted queries across 11 intents — modeled on real user behavior from Indian logistics platforms |
+| **Custom Dataset** | 297 hand-crafted queries across 11 intents — modeled on real user behavior from Indian logistics platforms |
 | **Robust Preprocessing** | Handles typos, slang, abbreviations, Hinglish, and noisy mobile input |
 | **ML Classification** | TF-IDF + Logistic Regression pipeline — fast, lightweight, no GPU required |
 | **Confidence Scoring** | Every prediction includes a calibrated confidence score with threshold-based fallback |
@@ -68,7 +68,7 @@ The system demonstrates end-to-end ML engineering: dataset curation, feature eng
 |-----------|-----------|
 | Language | Python 3.9+ |
 | ML Framework | scikit-learn |
-| Vectorization | TF-IDF (unigrams + bigrams) |
+| Vectorization | TF-IDF (unigrams) |
 | Model | Logistic Regression |
 | Serialization | joblib |
 | Data Format | JSON, CSV |
@@ -87,21 +87,21 @@ The system demonstrates end-to-end ML engineering: dataset curation, feature eng
  │  User    │────▶│ Preprocessor │────▶│ TF-IDF    │────▶│  Logistic    │
  │  Input   │     │              │     │ Vectorizer│     │  Regression  │
  └──────────┘     │ • lowercase  │     │           │     │              │
-                  │ • clean      │     │ • 1500    │     │ • predict    │
+                  │ • clean      │     │ • 1000    │     │ • predict    │
                   │ • expand abbr│     │   features│     │ • probas     │
-                  │ • normalize  │     │ • bigrams │     │ • confidence │
+                  │ • normalize  │     │ • unigrams│     │ • confidence │
                   └──────────────┘     └───────────┘     └──────┬───────┘
                                                                 │
                                               ┌─────────────────┘
                                               ▼
                                    ┌────────────────────┐
                                    │ Confidence Check   │
-                                   │ threshold = 0.15   │
+                                   │ threshold = 0.25   │
                                    └────────┬───────────┘
                                             │
                               ┌─────────────┴─────────────┐
                               ▼                           ▼
-                    conf ≥ 0.15                    conf < 0.15
+                    conf ≥ 0.25                    conf < 0.25
                               │                           │
                               ▼                           ▼
                    ┌──────────────────┐       ┌───────────────────────┐
@@ -124,7 +124,9 @@ The system demonstrates end-to-end ML engineering: dataset curation, feature eng
                               └──────────────────┘
 ```
 
-![Architecture](assets/architecture.png)
+<p align="center">
+  <img src="assets/architecture.png" alt="System Architecture Diagram" width="700" />
+</p>
 
 ---
 
@@ -212,23 +214,23 @@ python src/chatbot.py
 
   You: hello
   EasyWay AI: Hey! Welcome back. Need help with booking, tracking, or something else?
-  📌 (Intent: greeting | Confidence: 0.1965)
+  📌 (Intent: greeting | Confidence: 0.6509)
 
-  You: need lorry for shifting from chennai to bangalore
-  EasyWay AI: Booking request received! Which type of vehicle do you need?
-  📌 (Intent: booking_request | Confidence: 0.2154)
+  You: need lorry tomorrow
+  EasyWay AI: Great! Let's get your booking started. How much load are you looking to transport?
+  📌 (Intent: booking_request | Confidence: 0.2719)
 
-  You: how much for 10km transport
-  EasyWay AI: Our rates depend on distance, vehicle type, and load weight.
-  📌 (Intent: price_inquiry | Confidence: 0.2616)
+  You: payment deducted twice
+  EasyWay AI: Let me look into this. Can you confirm the payment method and approximate amount?
+  📌 (Intent: payment_issue | Confidence: 0.6077)
 
-  You: payment deducted twice pls refund
-  EasyWay AI: Payment issues are handled on priority. Could you share the transaction ID?
-  📌 (Intent: payment_issue | Confidence: 0.2180)
+  You: where is my shipment
+  EasyWay AI: Let me look up your delivery details. Please provide the tracking ID or order number.
+  📌 (Intent: delivery_status | Confidence: 0.5060)
 
   You: what is quantum physics
   EasyWay AI: I'm not sure I understood that. Let me connect you to support.
-  ⚠️  (Intent: fallback | Confidence: 0.1266)
+  ⚠️  (Intent: fallback | Confidence: 0.1937)
 
   You: exit
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -242,8 +244,11 @@ python src/chatbot.py
 
 ```text
 easyway-ai-chatbot/
+├── assets/
+│   ├── demo.png                  # Chatbot interaction screenshot
+│   └── architecture.png          # System architecture diagram
 ├── data/
-│   ├── intents.json              # Curated queries mapped to 11 transport intents
+│   ├── intents.json              # 297 curated queries mapped to 11 transport intents
 │   ├── responses.json            # Dynamic response templates
 │   └── abbreviations.json        # Domain-specific slang expansion mapping
 ├── models/                       # Generated during training (ignored in git)
@@ -264,19 +269,20 @@ easyway-ai-chatbot/
 
 | Metric | Value |
 |--------|-------|
-| Accuracy (test split) | **85–92%** |
-| Model | Logistic Regression (`lbfgs`, C=1.0) |
-| Features | TF-IDF, up to 1500 dimensions |
-| Dataset | 132 samples across 11 intents |
+| Accuracy (cross-validated) | **73% mean** (5-fold CV) |
+| Model | Logistic Regression (`lbfgs`, C=5.0) |
+| Features | TF-IDF, up to 1000 dimensions (unigrams) |
+| Dataset | 297 samples across 11 intents |
 | Split | 80/20 stratified |
+| Confidence range (valid) | **0.27 – 0.88** |
 
-> **Note:** Accuracy variance is expected at this dataset scale. As the corpus grows beyond 500 samples, expect convergence toward 90%+ with tighter confidence distributions. The logging system is designed to feed unknown queries back into the training set for continuous improvement.
+> **Note:** The model was tuned via grid search over C, ngram range, and feature count. At 297 samples, cross-validated accuracy is 73% — a realistic measure that avoids overfitting seen with smaller datasets. The logging system captures unknown queries for continuous improvement.
 
 ---
 
 ## ⚠️ Limitations
 
-- **Small dataset size** — 132 samples limits vocabulary coverage. The logging module captures unknown queries for iterative dataset expansion.
+- **Dataset scale** — 297 samples provides solid coverage but limits generalization to unseen phrasing. The logging module captures unknown queries for iterative expansion.
 - **Lower confidence on ambiguous queries** — Multi-intent or heavily code-mixed inputs may fall below the confidence threshold. This is by design — the system prefers safe fallback over incorrect classification.
 - **No deep learning model yet** — TF-IDF captures lexical patterns but not semantic similarity. Transformer-based models (planned for Phase 3) will address paraphrase understanding.
 
