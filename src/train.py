@@ -156,10 +156,13 @@ def build_vectorizer() -> TfidfVectorizer:
     Create a configured TF-IDF vectorizer for short logistics queries.
 
     Configuration rationale:
-        - max_features=1500:  Headroom for domain vocabulary growth.
-        - ngram_range=(1,2):  Captures bigrams like "payment failed", "book lorry".
-        - min_df=1:           Retain all terms — dataset is small (132 samples),
-                              so even single-occurrence words carry intent signal.
+        - max_features=1000:  Optimal feature count from grid search on 297 samples.
+                              Reduces noise from rare bigrams while keeping signal.
+        - ngram_range=(1,1):  Unigrams only — grid search showed bigrams add noise
+                              at current dataset size (297 samples). Re-evaluate
+                              when dataset exceeds 500 samples.
+        - min_df=1:           Retain all terms — dataset is still small enough
+                              that even single-occurrence words carry intent signal.
                               Increase to 2 when dataset exceeds 500 samples.
         - sublinear_tf=True:  Dampens the impact of repeated terms within a query.
 
@@ -168,8 +171,8 @@ def build_vectorizer() -> TfidfVectorizer:
     """
 
     vectorizer = TfidfVectorizer(
-        max_features=1500,
-        ngram_range=(1, 2),
+        max_features=1000,
+        ngram_range=(1, 1),
         min_df=1,
         sublinear_tf=True
     )
@@ -188,7 +191,9 @@ def build_model() -> LogisticRegression:
     Configuration rationale:
         - max_iter=1000:        Ensures convergence on small datasets.
         - solver="lbfgs":       Efficient for small-to-medium datasets.
-        - C=1.0:                Default regularization — good baseline.
+        - C=5.0:                Tuned via grid search on 297 samples.
+                                Higher C = less regularization, allowing the model
+                                to fit the expanded dataset's diversity better.
 
     Returns:
         Configured (unfitted) LogisticRegression instance.
@@ -197,7 +202,7 @@ def build_model() -> LogisticRegression:
     model = LogisticRegression(
         max_iter=1000,
         solver="lbfgs",
-        C=1.0,
+        C=5.0,
         random_state=42
     )
 

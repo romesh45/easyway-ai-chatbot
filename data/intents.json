@@ -536,5 +536,676 @@
   {
     "text": "thanks team you saved me today",
     "intent": "thanks"
+  },
+
+  {
+    "text": "need a truck urgently for shifting goods from surat to vadodara",
+    "intent": "booking_request"
+  },
+  {
+    "text": "bhai ek canter arrange karo 5 ton load hai",
+    "intent": "booking_request"
+  },
+  {
+    "text": "can i book 2 trucks for same day delivery to different locations",
+    "intent": "booking_request"
+  },
+  {
+    "text": "i wanna move my shop inventory to new location plz help",
+    "intent": "booking_request"
+  },
+  {
+    "text": "pickup schedule karo kal dopahar 2 baje warehouse se",
+    "intent": "booking_request"
+  },
+  {
+    "text": "we have bulk shipment every week can u provide dedicated truck",
+    "intent": "booking_request"
+  },
+  {
+    "text": "looking for a truck with labour for loading unloading also",
+    "intent": "booking_request"
+  },
+  {
+    "text": "send one chota hathi to sector 62 noida by evening pls",
+    "intent": "booking_request"
+  },
+  {
+    "text": "i need return trip booking lucknow to kanpur and back same day",
+    "intent": "booking_request"
+  },
+  {
+    "text": "hamein roz ek truck chahiye factory se godown tak",
+    "intent": "booking_request"
+  },
+  {
+    "text": "book vehicle for moving raw materials from port to factory",
+    "intent": "booking_request"
+  },
+  {
+    "text": "urgent vehicle chahiye abhi 1 ghante mein aa sakta hai kya",
+    "intent": "booking_request"
+  },
+  {
+    "text": "need covered body truck for electronics shifting rain forecast hai",
+    "intent": "booking_request"
+  },
+  {
+    "text": "can u arrange pickup from my home address to airport cargo",
+    "intent": "booking_request"
+  },
+  {
+    "text": "truck book krna h parso ke liye kolkata se patna",
+    "intent": "booking_request"
+  },
+
+  {
+    "text": "price btao 500kg load ke liye within mumbai local",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "do you have any monthly packages for regular transport",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "kya aapke paas koi discount hai first time users ke liye",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "toll charges included hai ya alag se lagenge",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "what will be approximate cost for 3 trips per week delhi ncr",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "loading unloading ka charge alag hai ya included in trip cost",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "send me detailed rate card for all vehicle types",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "how much extra for ac truck with temperature control",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "compare price between tata ace and eicher for same route pls",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "agar return trip bhi book karu toh koi discount milega kya",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "total kitna hoga labour charges ke saath bangalore to chennai",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "do u charge by weight or by distance for local transport",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "any hidden charges apart from what is shown on app",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "insurance cost kitna lagega fragile goods ke liye",
+    "intent": "price_inquiry"
+  },
+  {
+    "text": "weekend rates zyada hote hai kya compared to weekday",
+    "intent": "price_inquiry"
+  },
+
+  {
+    "text": "bhilai mein koi truck milega kal subah 6 baje",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "is there a pickup van available for small parcels in delhi",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "need 32ft trailer for heavy machinery is it available this month",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "auto rickshaw type mini loader milega kya local shifting ke liye",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "any trucks available on rent for 1 week continuously",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "show me list of vehicles you have in kolkata right now",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "ek tempo available hai kya abhi turant lucknow mein",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "do you have gps enabled trucks i need live tracking",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "is mahindra bolero pickup available in jaipur for tomorrow",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "i need a truck with partition for mixed goods avl hai kya",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "any container trucks for export shipment from nhava sheva port",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "hyderabad se vizag ke liye koi vehicle milega aaj raat ko",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "how soon can u provide a vehicle if i book now",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "scooty ya bike se chhota parcel bhej sakte ho kya same city",
+    "intent": "vehicle_availability"
+  },
+  {
+    "text": "do u have hydraulic lift trucks for heavy machine loading",
+    "intent": "vehicle_availability"
+  },
+
+  {
+    "text": "bhai mera samaan abhi tak nhi aaya kab aayega",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "order dispatched tha kal but no movement since then",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "can u share driver contact number i need to coordinate delivery",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "tracking page pe koi update nhi aa rha hai last 12 hrs se",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "is my order stuck somewhere it was supposed to come today morning",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "shipment picked up but estimated delivery date not showing",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "kya driver raste mein hai ya abhi pickup bhi nhi hua",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "my goods are fragile is the driver handling them carefully pls check",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "delivery attempt failed it says but i was home whole day",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "order id 77234 ka kya status hai abhi",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "truck has crossed state border or not yet update do pls",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "partial delivery hua hai rest of items kab aayenge",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "driver ka phone band aa rha hai and shipment is late",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "why is there no otp or delivery confirmation received yet",
+    "intent": "delivery_status"
+  },
+  {
+    "text": "sending to wrong address pls redirect my shipment urgently",
+    "intent": "delivery_status"
+  },
+
+  {
+    "text": "driver ne mera samaan toh diya lekin half items missing hain",
+    "intent": "complaint"
+  },
+  {
+    "text": "i raised a complaint 1 week back but zero followup from ur team",
+    "intent": "complaint"
+  },
+  {
+    "text": "truck came without tarpaulin and my goods got wet in rain",
+    "intent": "complaint"
+  },
+  {
+    "text": "your executive misbehaved on call when i asked for refund",
+    "intent": "complaint"
+  },
+  {
+    "text": "same issue happening again and again u guys never learn",
+    "intent": "complaint"
+  },
+  {
+    "text": "overloaded my goods with someone elses shipment without permission",
+    "intent": "complaint"
+  },
+  {
+    "text": "driver was drunk while transporting my expensive machinery",
+    "intent": "complaint"
+  },
+  {
+    "text": "aapke driver ne traffic rules toda aur challan aaya mera",
+    "intent": "complaint"
+  },
+  {
+    "text": "no insurance was provided even though i paid extra for it",
+    "intent": "complaint"
+  },
+  {
+    "text": "fake driver came not the one assigned on app very scary experience",
+    "intent": "complaint"
+  },
+  {
+    "text": "promised 1 day delivery but took 4 days no sorry no discount nothing",
+    "intent": "complaint"
+  },
+  {
+    "text": "the weighing scale at pickup was rigged they charged more weight",
+    "intent": "complaint"
+  },
+  {
+    "text": "app showed vehicle left but driver actually came 3 hours late",
+    "intent": "complaint"
+  },
+  {
+    "text": "my shipment was opened and some items are clearly stolen",
+    "intent": "complaint"
+  },
+  {
+    "text": "horrible customer support waited 45 mins on call nobody picked up",
+    "intent": "complaint"
+  },
+
+  {
+    "text": "mere account se 3 baar paise kat gaye ek hi booking ke liye",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "payment successful msg aaya but app says payment pending",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "refund initiated 10 days ago still not received in bank",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "i want to pay via cash on delivery is that option available",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "emi option hai kya bade shipment ke liye payment mein",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "my card is getting declined on your platform but works everywhere else",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "promo code laga ke bhi discount nhi mila bill mein",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "amount debited from phonepe but booking not confirmed what to do",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "can i get payment receipt for this trip need it for tax filing",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "app is showing extra surge charge that wasnt there when i booked",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "paytm se payment kiya tha but refund upi pe aa gaya galat account",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "why am i being charged cancellation fee i cancelled within 5 mins",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "driver collected cash but app still showing unpaid fix this pls",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "partial payment option dedo bhai abhi full amount nahi hai",
+    "intent": "payment_issue"
+  },
+  {
+    "text": "transaction failed error code 502 kitni baar try karu",
+    "intent": "payment_issue"
+  },
+
+  {
+    "text": "how to delete my account from your platform permanently",
+    "intent": "support_request"
+  },
+  {
+    "text": "email id change karna hai purana email access nhi ho rha",
+    "intent": "support_request"
+  },
+  {
+    "text": "can someone call me back regarding a billing dispute",
+    "intent": "support_request"
+  },
+  {
+    "text": "i need a copy of my past trip invoices for last 3 months",
+    "intent": "support_request"
+  },
+  {
+    "text": "how do i add another pickup address to my account",
+    "intent": "support_request"
+  },
+  {
+    "text": "your app notification not coming on my phone how to fix",
+    "intent": "support_request"
+  },
+  {
+    "text": "want to register as driver partner on easyway platform kaise karu",
+    "intent": "support_request"
+  },
+  {
+    "text": "gst number update karna hai company profile mein help karo",
+    "intent": "support_request"
+  },
+  {
+    "text": "is there a way to schedule recurring bookings automatically",
+    "intent": "support_request"
+  },
+  {
+    "text": "i cant see my booking history its showing blank screen",
+    "intent": "support_request"
+  },
+  {
+    "text": "do you have api integration for our erp system",
+    "intent": "support_request"
+  },
+  {
+    "text": "referral code kahan dalu naya user add karne ke liye",
+    "intent": "support_request"
+  },
+  {
+    "text": "my account got locked after too many login attempts help me unlock",
+    "intent": "support_request"
+  },
+  {
+    "text": "can i get a dedicated account manager for our company",
+    "intent": "support_request"
+  },
+  {
+    "text": "document upload ho nhi rha hai kyc verification ke liye",
+    "intent": "support_request"
+  },
+
+  {
+    "text": "galti se book ho gaya cancel kr do abhi ke abhi",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "client ne order cancel kar diya so truck bhi cancel karo",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "can i reschedule instead of cancelling my booking",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "found cheaper option elsewhere so cancelling this one sorry",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "pickup location changed so current booking is useless cancel it",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "driver is taking too long to arrive i want to cancel now",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "strike hai aaj road pe isliye cancel karna padega booking",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "goods are not ready for dispatch yet so cancel todays pickup",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "duplicate booking ho gaya hai ek cancel kar do pls",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "i want full refund on cancellation not partial why are u deducting",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "cancel my evening slot and rebook for tomorrow morning instead",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "factory shutdown ho gaya unexpected so no shipment today cancel all",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "selected wrong vehicle type by mistake cancel and rebook karna hai",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "vendor ne delivery date push kiya hai so cancel truck for now",
+    "intent": "cancellation_request"
+  },
+  {
+    "text": "monsoon flooding cancel krna padega safety reasons se",
+    "intent": "cancellation_request"
+  },
+
+  {
+    "text": "yo whats up",
+    "intent": "greeting"
+  },
+  {
+    "text": "good morning team kuch help chahiye",
+    "intent": "greeting"
+  },
+  {
+    "text": "hiii anyone there?",
+    "intent": "greeting"
+  },
+  {
+    "text": "kya haal hai bhai",
+    "intent": "greeting"
+  },
+  {
+    "text": "hi is this the easyway logistics bot",
+    "intent": "greeting"
+  },
+  {
+    "text": "sup need some info about your services",
+    "intent": "greeting"
+  },
+  {
+    "text": "good morning ji aaj truck chahiye tha",
+    "intent": "greeting"
+  },
+  {
+    "text": "hey hi can you help me with something",
+    "intent": "greeting"
+  },
+  {
+    "text": "namaskar mai pehli baar use kar rha hoon",
+    "intent": "greeting"
+  },
+  {
+    "text": "hello team mujhe urgent help chahiye",
+    "intent": "greeting"
+  },
+  {
+    "text": "hi there just checking if this chat works",
+    "intent": "greeting"
+  },
+  {
+    "text": "arre bhai idhar koi hai kya",
+    "intent": "greeting"
+  },
+  {
+    "text": "good afternoon can i ask a few questions about transport",
+    "intent": "greeting"
+  },
+  {
+    "text": "hlo ji kuch poochna tha",
+    "intent": "greeting"
+  },
+  {
+    "text": "hey easyway i need your help with something",
+    "intent": "greeting"
+  },
+
+  {
+    "text": "acha chalo phir milte hain",
+    "intent": "goodbye"
+  },
+  {
+    "text": "thats all i needed bye thanks",
+    "intent": "goodbye"
+  },
+  {
+    "text": "ok no more questions. signing off",
+    "intent": "goodbye"
+  },
+  {
+    "text": "bas itna hi tha. bye bye",
+    "intent": "goodbye"
+  },
+  {
+    "text": "gotta go now talk later. peace",
+    "intent": "goodbye"
+  },
+  {
+    "text": "thanks for your time. closing chat now",
+    "intent": "goodbye"
+  },
+  {
+    "text": "theek hai bhai baad mein baat karte hain",
+    "intent": "goodbye"
+  },
+  {
+    "text": "okay done with my queries. tata",
+    "intent": "goodbye"
+  },
+  {
+    "text": "will reach out again if needed. bye for now",
+    "intent": "goodbye"
+  },
+  {
+    "text": "chalega ab. bohot help ho gayi. alvida",
+    "intent": "goodbye"
+  },
+  {
+    "text": "im done thanks have a good one",
+    "intent": "goodbye"
+  },
+  {
+    "text": "logging off see u next time",
+    "intent": "goodbye"
+  },
+  {
+    "text": "ok perfect no more help needed. good night",
+    "intent": "goodbye"
+  },
+  {
+    "text": "all sorted. will contact if anything comes up. bye",
+    "intent": "goodbye"
+  },
+  {
+    "text": "acha bye bhai apna khayal rakhna",
+    "intent": "goodbye"
+  },
+
+  {
+    "text": "bohot acha kaam kiya tumne thanks yaar",
+    "intent": "thanks"
+  },
+  {
+    "text": "issue resolved! thank you so much for the quick help",
+    "intent": "thanks"
+  },
+  {
+    "text": "perfect that fixed it. thanks a ton",
+    "intent": "thanks"
+  },
+  {
+    "text": "aapki team ne bahut jaldi response diya shukriya",
+    "intent": "thanks"
+  },
+  {
+    "text": "wow that was fast. much appreciated",
+    "intent": "thanks"
+  },
+  {
+    "text": "thank u bhai itni jaldi fix kar diya",
+    "intent": "thanks"
+  },
+  {
+    "text": "grateful for ur help. excellent support",
+    "intent": "thanks"
+  },
+  {
+    "text": "finally someone who actually helped. thank you",
+    "intent": "thanks"
+  },
+  {
+    "text": "thx for sorting this mess out quickly",
+    "intent": "thanks"
+  },
+  {
+    "text": "best customer service ive experienced. kudos to team",
+    "intent": "thanks"
+  },
+  {
+    "text": "refund aa gaya thanks for following up on it",
+    "intent": "thanks"
+  },
+  {
+    "text": "bahut mehnat ki aapne mere liye. dil se shukriya",
+    "intent": "thanks"
+  },
+  {
+    "text": "u guys r amazing keep up the good work thx",
+    "intent": "thanks"
+  },
+  {
+    "text": "hats off to ur support team very helpful and polite",
+    "intent": "thanks"
+  },
+  {
+    "text": "thank you for resolving my complaint so professionally",
+    "intent": "thanks"
   }
 ]

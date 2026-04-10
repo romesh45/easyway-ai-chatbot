@@ -49,7 +49,7 @@ ABBREVIATIONS_PATH = os.path.join(PROJECT_ROOT, "data", "abbreviations.json")
 #   132 samples  → 0.15
 #   500 samples  → 0.30
 #   1000+ samples → 0.40
-CONFIDENCE_THRESHOLD = 0.15
+CONFIDENCE_THRESHOLD = 0.25
 
 
 # ---------------------------------------------------------------------------
