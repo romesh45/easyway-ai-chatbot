@@ -1,0 +1,69 @@
+{
+  "booking_request": [
+    "Sure! I can help you book a vehicle. Could you share the pickup and drop locations?",
+    "Let me arrange a lorry for you. Please provide your load details and preferred time.",
+    "Booking request received! Which type of vehicle do you need — mini truck, tempo, or full lorry?",
+    "We'll get a truck ready for you. Please confirm the date, time, and pickup location.",
+    "Great! Let's get your booking started. How much load are you looking to transport?"
+  ],
+  "price_inquiry": [
+    "Our rates depend on distance, vehicle type, and load weight. Could you share the route details?",
+    "I can get you a price estimate. Please share the pickup city, drop city, and load type.",
+    "Prices start from ₹500 for local transport. For intercity, I'll need the route to give an exact quote.",
+    "Let me calculate a rate for you. What's the distance and type of goods you're moving?"
+  ],
+  "vehicle_availability": [
+    "Let me check vehicle availability in your area. Which city are you looking in?",
+    "We have multiple trucks available. Could you confirm the vehicle size you need?",
+    "Checking our fleet now. What date and time do you need the vehicle?",
+    "We usually have good availability. Please share your location so I can check right away."
+  ],
+  "delivery_status": [
+    "Let me track your shipment. Could you share your order ID or booking number?",
+    "I'll check the delivery status right away. Please provide your order ID.",
+    "Your shipment is being tracked. Can you share the booking reference number?",
+    "Let me look up your delivery details. Please provide the tracking ID or order number."
+  ],
+  "complaint": [
+    "I'm really sorry to hear about your experience. Let me escalate this to our team immediately.",
+    "We sincerely apologize for the inconvenience. I'm registering your complaint right now.",
+    "That's unacceptable and I'm sorry. Your complaint has been noted and our team will contact you within 24 hours.",
+    "I understand your frustration. Let me connect you with our grievance team for a quick resolution."
+  ],
+  "payment_issue": [
+    "I'm sorry about the payment issue. Let me check your transaction status right away.",
+    "Payment issues are handled on priority. Could you share the transaction ID or screenshot?",
+    "I'll escalate this to our payment team. Refunds typically process within 3-5 business days.",
+    "Let me look into this. Can you confirm the payment method and approximate amount?"
+  ],
+  "support_request": [
+    "I'm here to help! Could you describe your issue in a bit more detail?",
+    "Let me connect you with our support team. Please hold on for a moment.",
+    "I understand you need assistance. Our support agent will be with you shortly.",
+    "Sure, I'll escalate your query. In the meantime, can you share your registered phone number?"
+  ],
+  "cancellation_request": [
+    "I can help you cancel your booking. Could you share the order ID?",
+    "Cancellation request received. Please confirm the booking number you'd like to cancel.",
+    "Let me process the cancellation for you. Note: cancellation charges may apply if the vehicle is already dispatched.",
+    "Sure, I'll cancel that for you. Any specific reason? Your feedback helps us improve."
+  ],
+  "greeting": [
+    "Hello! Welcome to EasyWay Logistics. How can I help you today?",
+    "Hi there! Good to see you. What can I do for you?",
+    "Hey! Welcome back. Need help with booking, tracking, or something else?",
+    "Namaste! How can I assist you today?"
+  ],
+  "goodbye": [
+    "Goodbye! Have a great day. Feel free to reach out anytime.",
+    "Thanks for using EasyWay Logistics. See you soon!",
+    "Bye! Hope we could help. Don't hesitate to come back if you need anything.",
+    "Take care! We're always here if you need us."
+  ],
+  "thanks": [
+    "You're welcome! Happy to help. Is there anything else you need?",
+    "Glad I could assist! Feel free to ask if you have more questions.",
+    "No problem at all! Anything else I can do for you?",
+    "You're most welcome! We're always here to help."
+  ]
+}
