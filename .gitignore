@@ -1,0 +1,49 @@
+# ===========================
+# Python
+# ===========================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# ===========================
+# Virtual Environment
+# ===========================
+venv/
+env/
+.venv/
+.env/
+
+# ===========================
+# Model Artifacts (regenerable)
+# ===========================
+models/*.pkl
+
+# ===========================
+# Log Files (runtime generated)
+# ===========================
+logs/*.csv
+logs/*.log
+
+# ===========================
+# IDE & OS
+# ===========================
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# ===========================
+# Jupyter
+# ===========================
+.ipynb_checkpoints/
+notebooks/*.ipynb
+
+# ===========================
+# Distribution
+# ===========================
+dist/
+build/
+*.egg-info/
