@@ -308,5 +308,5 @@ This project is licensed under the MIT License.
 ---
 
 <p align="center">
-  Built with 🧠 by <a href="https://github.com/romesh45">Romesh</a>
+  Built with 🧠 by <a href="https://github.com/romesh45">Romeshwar K</a>
 </p>
