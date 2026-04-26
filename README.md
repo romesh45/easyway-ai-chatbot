@@ -28,7 +28,7 @@ Unlike wrapper projects that call external APIs, this system is **built entirely
 
 ## 🔥 What Makes This Project Stand Out
 
-This isn't a wrapper around ChatGPT or a tutorial copy-paste. It's a **ground-up ML system** that solves a real problem:
+This is not a wrapper around ChatGPT or a tutorial copy-paste. It's a **ground-up ML system** that solves a real problem:
 
 - **Real domain** — Indian logistics platforms handle millions of informal queries daily
 - **Real constraints** — Users type in broken English, Hinglish, and mobile shorthand
