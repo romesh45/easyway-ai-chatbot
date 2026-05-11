@@ -4,7 +4,7 @@
     <strong>Production-Grade NLP Intent Classification System for Logistics & Transport</strong>
   </p>
   <p align="center">
-    Built from scratch — custom dataset, ML pipeline, and real-time inference engine.
+    Built from scratch — custom dataset, ML pipeline, and real-time inference Engine
   </p>
 </p>
 
@@ -22,7 +22,7 @@
 
 EasyWay AI is an intelligent intent classification system engineered for the **Indian logistics and transport industry**. It classifies user queries — typed in informal English, Hinglish, and mobile-style shorthand — into actionable business intents like booking requests, payment issues, delivery tracking, and more.
 
-Unlike wrapper projects that call external APIs, this system is **built entirely from scratch**: custom dataset, preprocessing pipeline, ML model, inference engine, response system, and production logging — all hand-engineered for the logistics domain.
+Unlike wrapper projects that call external APIs, this system is **built entirely from scratch**: custom dataset, preprocessing pipeline, ML model, inference engine, response system, and production logging — all hand-engineered for the logistics domain
 
 ---
 
